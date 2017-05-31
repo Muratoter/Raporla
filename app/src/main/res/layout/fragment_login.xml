@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muratoter.isg.raporla.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputEPostaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputEmail">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.1"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_mail" />
+
+                <EditText
+                    android:id="@+id/et_login_eposta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:inputType="textEmailAddress"
+                    android:hint="E-posta"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_lock" />
+
+                <EditText
+                    android:id="@+id/et_login_password2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:hint="Şifre"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Switch
+            android:id="@+id/switch_hatirla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Hatırla "
+            android:textSize="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_eposta_log"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/oval_button"
+            android:onClick="onClick"
+            android:text="Giriş Yap"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
